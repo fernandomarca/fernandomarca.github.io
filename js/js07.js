@@ -24,4 +24,4 @@ function ligar(){
 		*/
 var x=6;
 
-alert (!(x >=1 ));
+alert (x);
