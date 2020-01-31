@@ -8,25 +8,19 @@ img, table{
 	
 }
 
-a{
-  border:2px black;
-  background-color:white;	
+button{
+  background-color: #4CAF50;
+  border:none;
+  color:white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
+button[type=button]:hover {
+  background-color: #45a049;
 }
 
-a:hover {
-  color:red;
-}
-
-a:active {
-  color:blue;
-}
 fieldset{width:140px;background-color:yellow;}
 
 label {display:block; float:left;}
