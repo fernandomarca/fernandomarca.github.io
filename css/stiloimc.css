@@ -1,7 +1,7 @@
 body{background-color:white;}
 
 img, table{
-	width:165px;
+	width:220px;
 	margin:0em auto;
 	border:1.5px black solid;
 	display:block;
@@ -9,25 +9,24 @@ img, table{
 }
 
 button{
-  background-color: #4CAF50;
-  border:none;
-  color:white;
-  padding: 10px 15px;
-  border-radius: 4px;
-  cursor: pointer;
+	background-color: #4CAF50;
+	border:none;
+	color:white;
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
 }
-
 button[type=button]:hover {
   background-color: #45a049;
 }
 
-fieldset{width:140px;background-color:yellow;}
+fieldset{width:200px;background-color:yellow;}
 
 label {display:block; float:left;}
 
-label,input {width:68px; margin:3px 0;}
+label,input {width:180px; margin:3px 0; text:blod;}
 
-th,td{border:2px solid black; font-size:0.8em;margin:0 auto; text-align:center; }
+th,td{ width:200px; padding:0em; border:2px solid black; font-size:0.8em;margin:0 auto; text-align:center; }
 
 form,fieldset{margin:0 auto;}
 
