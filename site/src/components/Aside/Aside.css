@@ -1,0 +1,82 @@
+div.container aside.aside {
+  background: darkgray;
+  width: 300px;
+  color: white;
+}
+
+div.container aside.aside .contact {
+  padding: 10px;
+}
+
+div.container aside.aside .contact h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #7cc4ff;
+  margin-bottom: 10px;
+}
+
+div.container aside.aside .contact ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+div.container aside.aside .contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+div.container aside.aside .contact ul li span {
+  margin: 5px;
+}
+
+div.container aside.aside .skills {
+  padding: 10px;
+}
+
+div.container aside.aside .skills h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #7cc4ff;
+}
+
+div.container aside.aside .skills h3 {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+div.container aside.aside .skills progress {
+  text-align: left;
+  margin: 5px 0px;
+  height: 25px;
+  width: 100%;
+  -webkit-appearance: none;
+  border: none;
+  position: relative;
+}
+
+div.container aside.aside .skills progress::before {
+  content: attr(data-label);
+  font-size: 16px;
+  color: rgb(49, 49, 49);
+  font-weight: bold;
+  vertical-align: 1;
+
+  position: absolute;
+  left: 2px;
+  top: 2.5px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #c9c9c9;
+}
+
+progress::-webkit-progress-value {
+  background-color: #7cc4ff;
+}
+
+progress::-moz-progress-bar {
+  background-color: #7cc4ff;
+}

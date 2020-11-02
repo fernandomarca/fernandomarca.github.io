@@ -2,20 +2,18 @@ import React from 'react';
 
 import './Header.css'
 
+import foto from '../../assets/images/fernando.png';
+
 const Header = () => {
     return (
         <div className="header-container">
-            <nav className="header-nav">
-                <ul>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Experiência</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Formação</a></li>
-                    <li><a href="">Contato</a></li>
-                    <li><a href="">Serviços-PJ</a></li>
-                </ul>
-            </nav>
-        </div>
+            <img src={foto} alt="foto" />
+            <div className="title">
+                <h1>FERNANDO <br /> MARCA MAGALHÃES</h1>
+                <h3>Full-Stack Developer</h3>
+                <h4>Software Engineer</h4>
+            </div>
+        </div >
     )
 }
 
