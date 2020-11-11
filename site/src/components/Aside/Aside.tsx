@@ -21,7 +21,7 @@ function Aside() {
 
             <li>
               <FaGlobe size={20}></FaGlobe>
-              <span>www.fernando.com.br</span>
+              <a href="https://fernandomarca-github-io-personal.vercel.app/">fernandomarca</a>
             </li>
 
             <li>
