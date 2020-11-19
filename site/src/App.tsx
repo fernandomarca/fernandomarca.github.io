@@ -19,7 +19,7 @@ function App() {
           <section className="perfil">
             <h2>PERFIL <FaUserAlt size={18}></FaUserAlt></h2>
             <p>Engenheiro a oito anos, tive oportunidade de
-            trabalhar, com desenvolvimento web, adquirindo experiência com uso de frameworks/bibliotecas como React, React-native, NodeJS, WordPress.
+            trabalhar, como desenvolvedor web, adquirindo experiência com framework/bibliotecas como React, React-native, NodeJS, WordPress.
             </p>
             <p>
               Participei de equipes multidisciplinares, no desenvolvimento de
@@ -28,12 +28,12 @@ function App() {
             <p>
               Buscando ampliar meus conhecimentos, concluí uma
               especialização em engenharia mecatrônica, que me capacitou a programar interfaces
-              homem/máquina (IHM) em Java de controle e monitoramento de dispositivos de
-              automação. Também para programação de controladores lógicos programáveis (CLP) com Ladder e de Arduino com linguagem C e C++.
+              homem/máquina (IHM) em Java para controle e monitoramento de dispositivos de
+              automação. A programação de controladores lógicos programáveis (CLP) com Ladder e de Arduino com linguagem C e C++ também foi utilizada.
             </p>
             <p>
               Apaixonado pela aplicação do conhecimento tecnológico adquiridos até o
-              momento, sempre busco qualificação técnica necessária para manter-se atualizado.
+              momento, sempre busco qualificação técnica necessária para manter-me atualizado.
             </p>
             <p>
               Curso engenharia de software e me capacitei com diversos outros cursos técnicos para desenvolvimento web e mobile com tecnologias mais alinhadas ao mercado atual, sendo elas: JavaScript, React, React-Native, NextJs, NodeJs e Wordpress.

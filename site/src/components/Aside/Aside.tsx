@@ -55,7 +55,7 @@ function Aside() {
         </div>
 
         <div className="skills">
-          <h2>SKILLS</h2>
+          <h2>Hard Skills</h2>
           <h3>Full Stack Developer</h3>
 
           <div>
@@ -96,6 +96,15 @@ function Aside() {
               value={75}
               max={100}
               dataLabel="React-Native"
+            >
+            </Progress>
+          </div>
+
+          <div>
+            <Progress
+              value={70}
+              max={100}
+              dataLabel="NextJs"
             >
             </Progress>
           </div>
@@ -111,56 +120,54 @@ function Aside() {
         </div>
 
         <div className="skills">
-          <h2>SKILLS</h2>
-          <h3>Full Stack Developer</h3>
-
-          <div>
-            <Progress
-              value={95}
-              max={100}
-              dataLabel="HTML5"
-            />
-          </div>
-
-          <div>
-            <Progress
-              value={85}
-              max={100}
-              dataLabel="CSS"
-            />
-          </div>
-
-          <div>
+          <h2>Soft Skills</h2>
+          <div className="softSkills">
             <Progress
               value={75}
               max={100}
-              dataLabel="JavaScript"
+              dataLabel="Comunicação"
             />
           </div>
 
-          <div>
-            <Progress
-              value={90}
-              max={100}
-              dataLabel="React"
-            >
-            </Progress>
-          </div>
-
-          <div>
-            <Progress
-              value={75}
-              max={100}
-              dataLabel="React-Native"
-            >
-            </Progress>
-          </div>
-
-          <div>
+          <div className="softSkills">
             <Progress
               value={80}
               max={100}
-              dataLabel="Node.js"
+              dataLabel="Empatia"
+            />
+          </div>
+
+          <div className="softSkills">
+            <Progress
+              value={90}
+              max={100}
+              dataLabel="Proatividade"
+            >
+            </Progress>
+          </div>
+
+          <div className="softSkills">
+            <Progress
+              value={75}
+              max={100}
+              dataLabel="Colaboração"
+            >
+            </Progress>
+          </div>
+
+          <div className="softSkills">
+            <Progress
+              value={85}
+              max={100}
+              dataLabel="Liderança"
+            />
+          </div>
+
+          <div className="softSkills">
+            <Progress
+              value={70}
+              max={100}
+              dataLabel="Flexibilidade"
             />
           </div>
 

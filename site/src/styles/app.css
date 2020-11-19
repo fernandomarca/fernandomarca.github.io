@@ -23,7 +23,7 @@ main.main section {
 }
 
 main.main section h2 {
-  margin-bottom: 10px;
+  margin: 10px 0;
   color: darkgray;
   border-bottom: 2px solid #7cc4ff;
 
@@ -150,7 +150,7 @@ main.main section div.formacao .instituicao {
   align-items: center;
   justify-content: space-between;
 
-  max-width: 300px;
+  min-width: 440px;
   height: 100px;
 
   list-style: none;

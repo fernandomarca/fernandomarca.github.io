@@ -11,7 +11,7 @@ div.container aside.aside .contact {
 div.container aside.aside .contact h2 {
   font-size: 20px;
   text-align: center;
-  color: #1D45F2;
+  color: rgba(0, 0, 0, 0.6);
   margin-bottom: 10px;
   border-bottom: 2px solid rgba(116, 116, 116, 0.6);
 }
@@ -21,8 +21,6 @@ div.container aside.aside .contact ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid rgba(116, 116, 116, 0.6);
-
 }
 
 div.container aside.aside .contact ul li {
@@ -69,9 +67,9 @@ div.container aside.aside .skills h2 {
   align-items: center;
   font-size: 20px;
   padding: 10px;
-  color: #1D45F2;
+  color: rgba(0, 0, 0, 0.6);
   border-bottom: 2px solid rgba(116, 116, 116, 0.6);
-
+  border-top: 2px solid rgba(116, 116, 116, 0.6);
 }
 
 div.container aside.aside .skills h3 {
@@ -128,10 +126,18 @@ progress::-webkit-progress-bar {
   background-color: #c9c9c9;
 }
 
+.softSkills progress::-webkit-progress-value {
+  background-color: #1df232;
+}
+
+.softSkills progress::-moz-progress-bar {
+  background-color: #1df232;
+}
+
 progress::-webkit-progress-value {
-  background-color: #1d45f2;
+  background-color: #2561f6;
 }
 
 progress::-moz-progress-bar {
-  background-color: #1d45f2;
+  background-color: #2561f6;
 }
