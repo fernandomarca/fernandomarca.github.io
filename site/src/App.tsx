@@ -3,9 +3,8 @@ import React from 'react';
 import Header from './components/Header/Header';
 import Aside from './components/Aside/Aside';
 
-import { FaUserAlt } from "react-icons/fa";
-import { FaBook } from "react-icons/fa";
-import { FaPenFancy } from "react-icons/fa";
+import { FaUserAlt, FaBook, FaPenFancy, FaArrowRight } from "react-icons/fa";
+
 import './styles/app.css';
 
 function App() {
@@ -17,31 +16,34 @@ function App() {
         <Aside></Aside>
 
         <main className="main">
-          <section>
+          <section className="perfil">
             <h2>PERFIL <FaUserAlt size={18}></FaUserAlt></h2>
-            <p>Engenheiro com 8 anos de experiência. Ao longo dos anos, tive oportunidade de
-            trabalhar, inicialmente, com desenvolvimento web para intranet, utilizando HTML e CSS.
-            Posteriormente com equipes multidisciplinares, participei no desenvolvimento de
-            projetos que exigiam integração de tecnologias para construção de casas inteligentes através
-            da automação residencial e também em projetos de automação industrial.
-            No decorrer da carreira e devido as capacitações necessárias que surgiam, as mesmas
-            me direcionaram a concluir primeiramente a graduação em engenharia civil, logo depois para
-            uma especialização em engenharia mecatrônica, que me capacitou a programar interfaces
-            homem/máquina (IHM) em Java, para o controle e monitoramento dos dispositivos de
-            automação instalados.
-            Também tenho conhecimento para programação de controladores lógicos
-            programáveis (CLP) com linguagem Ladder e de Arduino com linguagem C e C++.
-            Apaixonado pela aplicação da tecnologia e dos conhecimentos adquiridos até o
-            momento, continuo a buscar qualificação técnica para manter-se atualizado, para tal, no
-            momento estou cursando engenharia de software e me capacitando com diversos cursos para
-            desenvolvimento web e mobile, utilizando as tecnologias JavaScript, ReactJs, React Native,
-            NextJs, Node e Wordpress.
-            Busco por oportunidades para atuar na área de desenvolvimento de software com as
-            tecnologias de interesse acima. Disponível para consulta alguns projetos pessoais no GitHub.
+            <p>Engenheiro a oito anos, tive oportunidade de
+            trabalhar, com desenvolvimento web, adquirindo experiência com uso de frameworks/bibliotecas como React, React-native, NodeJS, WordPress.
+            </p>
+            <p>
+              Participei de equipes multidisciplinares, no desenvolvimento de
+              projetos para integração de tecnologias em automação de casas inteligentes e também em projetos de automação industrial.
+            </p>
+            <p>
+              Buscando ampliar meus conhecimentos, concluí uma
+              especialização em engenharia mecatrônica, que me capacitou a programar interfaces
+              homem/máquina (IHM) em Java de controle e monitoramento de dispositivos de
+              automação. Também para programação de controladores lógicos programáveis (CLP) com Ladder e de Arduino com linguagem C e C++.
+            </p>
+            <p>
+              Apaixonado pela aplicação do conhecimento tecnológico adquiridos até o
+              momento, sempre busco qualificação técnica necessária para manter-se atualizado.
+            </p>
+            <p>
+              Curso engenharia de software e me capacitei com diversos outros cursos técnicos para desenvolvimento web e mobile com tecnologias mais alinhadas ao mercado atual, sendo elas: JavaScript, React, React-Native, NextJs, NodeJs e Wordpress.
+            </p>
+            <p>
+              Busco por oportunidades e novos desafios de crescimento profissional e pessoal atuanado na área de desenvolvimento.
             </p>
           </section>
 
-          <section>
+          <section >
             <h2>FORMAÇÃO<FaBook size={18}></FaBook></h2>
 
             <div className="formacao">
@@ -49,8 +51,19 @@ function App() {
                 <p>2020-Atual</p>
               </div>
               <div className="instituicao">
-                <p>Estácio, Cascavel-PR</p>
+                <p>Estácio</p>
                 <p>Engenharia de Software</p>
+              </div>
+            </div>
+
+            <div className="formacao">
+              <div className="periodo">
+                <p>2020-2020</p>
+              </div>
+              <div className="instituicao">
+                <p>Rocketseat</p>
+                <p>Bootcamp gostack</p>
+                <p>Fullstack developer - React - React-native - NodeJs</p>
               </div>
             </div>
 
@@ -63,15 +76,6 @@ function App() {
                 <p>Especialização em Engenharia Mecatrônica</p>
               </div>
             </div>
-            {/* 
-            Principais competências adquiridas no curso:
-            Formação multidisciplinar para atuar nas áreas de integração e
-            automação de sistemas residenciais e industriais. Conhecimentos de
-            eletrônica digital e embarcada, circuitos elétricos, programação de
-            microcontroladores, robótica industrial, programação Assembly,
-            programação de CLP (controlador lógico programável) com Ladder,
-            programação de supervisório industrial de interface homem/máquina em
-            Java e UI Scada, e também interfaces em C/C++.*/}
 
             <div className="formacao">
               <div className="periodo">
@@ -85,38 +89,168 @@ function App() {
 
           </section>
 
-          <section>
-            <h2>EXPERIÊNCIA <FaPenFancy size={18}></FaPenFancy></h2>
-            <p>2013-2019
-            IKNOS ARQUITETURA E ENGENHARIA
-            Atuando como gerente de obras, sendo também o engenheiro civil
-            responsável técnico da empresa junto ao CREA-PR, agregando em seu
-            currículo um acervo com mais de 20.000 m2 de obras e projetos
-            executados, sendo industrial, comercial e residencial.
-            Principais serviços prestados:
-             Implementação do sistema ERP (Enterprise Resource Planning)
-            da construtora para integração dos seus departamentos,
-            experiência adquirida anteriormente;
-             Participação ativa na implementação do sistema BIM de projetos –
-            (Modelagem da Informação da Construção), para integração do
-            ambiente de desenvolvimentos dos projetos e da utilização de
-            tecnologias de realidade aumentada e virtual para melhor
-            experiência e satisfação dos clientes;
-             Desenvolvimento de projetos específicos de automação
-            residencial de casas inteligentes com integração dos sistemas de
-            geração de energia solar com placas fotovoltaicas e para
-            aquecimento de água.
-            Tecnologias utilizadas nas residências:
-            Fibaro System e Arduino programado em C/C++.
-            Tecnologias utilizadas para industrias:
-            CPL (controlador lógico programável), sendo programados em
-            Ladder e seus sistemas supervisórios de interface
-            homem/máquina C/C++, Java e UI Scada.</p>
-          </section>
-
         </main>
 
       </div>
+
+      <section className="sectionExperiencias">
+        <h2>EXPERIÊNCIA <FaPenFancy size={18}></FaPenFancy></h2>
+        <div className="experiencias">
+          <strong>2013-2019 IKNOS ARQUITETURA - </strong>
+          <a href="https://iknosarquitetura.eng.br/" target="__blanc">Link do site</a>
+          <p className="trabalhos">Trabalhos desempenhados:</p>
+
+          <p className="funcao">
+            Gestão do site empresarial, realizando atualizações, verificações de performance, melhoria da experiência dos visitantes, verificação de contéudo, compactação de imagens para sua otimização e desenvolvimento de páginas integradas com as estratégias de marketing da empresa.
+                </p>
+
+          <div className="tecs">
+            <p>Tecnologias utilizadas:</p>
+
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>WordPress</li>
+              <li>MailChimp</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div className="experiencias">
+          <strong>2019-2020 FM MAGALHÃES E ENGENHARIA E CONSTRUÇÕES - </strong>
+          <a href="https://fmmagalhaes.com.br" target="__blanc">Link do site</a>
+          <p className="trabalhos">Trabalhos desempenhados:</p>
+
+          <p className="funcao">
+            Construção da plataforma SIAM-SCI, a qual coleta e manipula dados para o setor imobiliário. Fornece uma dashboard com métricas de imóveis a venda em uma determinada cidade, útil para pesquisa de mercado e análise de concorrência. Utiliza-se de web-scrapping e ciência de dados para geração e produção de relatórios.
+                  <a href="https://github.com/fernandomarca/Projeto-Sciam-sci" target="__blanc">Link do projeto no Github</a>
+          </p>
+          <p className="funcao">
+            Desenvolvimento de projetos específicos de automação
+            residencial para casas inteligentes com integração dos sistemas de
+            geração de energia solar fotovoltaica.
+            Configuração do sistema Fibaro System e Arduino programavél em C/C++, Java UI Scada.
+                </p>
+          <p className="funcao">
+            Construção e gestão do site empresarial, realizando atualizações, verificações de performanse, melhoria da experiência dos usuários, verificação de contéudo, compactação de imagens para sua otimização e desenvolvimento de páginas integradas com as estratégias de marketing da empresa.
+                </p>
+
+          <div className="tecs">
+            <p>Tecnologias utilizadas:</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>WordPress</li>
+              <li>React</li>
+              <li>NodeJs</li>
+              <li>MongoDb</li>
+              <li>Sqlite</li>
+              <li>Knex</li>
+              <li>Arduino com c/c++</li>
+              <li>CLP com Ladder</li>
+              <li>IHM com Java UI Scada</li>
+              <li>MailChimp</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <h2 className="projetosGit">Outros projetos no Github: <FaPenFancy size={18}></FaPenFancy></h2>
+
+      <section className="git">
+        <ul>
+          <a href="https://github.com/fernandomarca/Projeto-Sciam-sci" target="__blanc">
+            <li>
+              <p>
+                Projeto-Sciam-Sci - voltado para coleta e ciência de dados para o setor imobiliário.
+              </p>
+              <FaArrowRight size={18} />
+            </li>
+          </a>
+
+          <a href="https://github.com/fernandomarca/coranaMonitoramentoMapView" target="__blanc">
+            <li>
+              <p>CoronaMapView - aplicação web e mobile de monitoramento da covid-19 nas cidades
+              </p>
+              <FaArrowRight size={18} />
+            </li>
+          </a>
+
+          <a href="https://github.com/fernandomarca/gostack-template-fundamentos-react-native" target="__blanc">
+            <li>
+              <p>
+                GoMarketplace - Um projeto básico de marketplace
+              </p>
+              <FaArrowRight size={18} />
+            </li>
+          </a>
+
+          <a href="https://github.com/fernandomarca/05-primeiro-projeto-react" target="__blanc"> <li>
+            <p>
+              Github-Explorer - Uma aplicação para pesquisar e guardar seus repositórios
+            </p>
+            <FaArrowRight size={18} />
+          </li>
+          </a>
+
+          <a href="https://github.com/fernandomarca/gostack-template-fundamentos-reactjs" target="__blanc">
+            <li>
+              <p>
+                GoFinances - aplicação de controle financeiro
+              </p>
+              <FaArrowRight size={18} />
+            </li>
+          </a>
+
+          <a href="https://github.com/fernandomarca/cloneGatry" target="__blanc">
+            <li>
+              <p>
+                Gatry - clone da interface do Gatry para estudos
+              </p>
+              <FaArrowRight size={18} />
+            </li>
+          </a>
+
+          <a href="https://github.com/fernandomarca/Twitter-clone" target="__blanc">
+            <li>
+              <p>
+                Twitter - clone da interface do Twitter para estudos
+              </p>
+              <FaArrowRight size={18} />
+            </li>
+          </a>
+
+          <a href="https://github.com/fernandomarca/Proj-Workshop" target="__blanc">
+            <li>
+              <p>
+                LandingPage - Página básica de captura de leads para um workshop
+              </p>
+              <FaArrowRight size={18} />
+            </li>
+          </a>
+
+          <a href="https://github.com/fernandomarca/happy" target="__blanc">
+            <li>
+              <p>
+                Happy - aplicação web e mobile que conecta pessoas aos orfanatos
+              </p>
+              <FaArrowRight size={18} />
+            </li>
+          </a>
+
+          <a href="https://github.com/fernandomarca/BlocoDeNotasC-Qt" target="__blanc">
+            <li>
+              <p>
+                Bloco de notas - software de bloco de notas simples c++ e Qt
+              </p>
+              <FaArrowRight size={18} />
+            </li>
+          </a>
+        </ul>
+
+      </section>
+
     </div >
   );
 }

@@ -1,32 +1,47 @@
 import React from 'react';
 
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaAddressBook } from "react-icons/fa";
-import { FaGlobe } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
+import { FaAddressBook, FaEnvelope, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+
+import Progress from '../Progress';
 
 import '../Aside/Aside.css';
 
 function Aside() {
+
   return (
     <>
       <aside className="aside">
         <div className="contact">
-          <h2>CONTATO / CONTACT</h2>
+          <h2>INFORMAÇÕES DE CONTATO</h2>
           <ul>
             <li>
-              <FaPhoneAlt size={20}></FaPhoneAlt>
-              <span>+55(45)9 9919-9269</span>
+              <div className="asidlinks">
+                <FaWhatsapp size={20}></FaWhatsapp>
+                <a href="https://api.whatsapp.com/send?phone=5545999199269" target="__blanc">Whatsapp</a>
+              </div>
             </li>
 
             <li>
-              <FaGlobe size={20}></FaGlobe>
-              <a href="https://fernandomarca-github-io-personal.vercel.app/">fernandomarca</a>
+              <div className="asidlinks">
+                <FaGithub size={20}></FaGithub>
+                <a href="https://github.com/fernandomarca" target="__blanc">Github-Link</a>
+              </div>
             </li>
 
             <li>
-              <FaEnvelope size={20}></FaEnvelope>
-              <span>fernando@hotmail.com</span>
+              <div className="asidlinks">
+                <FaLinkedin size={20}></FaLinkedin>
+                <a href="https://www.linkedin.com/in/fernandomarcamagalhaes/" target="__blanc">Linkedin-Link</a>
+              </div>
+            </li>
+
+            <li>
+              <div className="asidlinks">
+                <FaEnvelope size={20}></FaEnvelope>
+                <a href="mailto:fernandomarca@hotmail.com?subject=Job">
+                  Enviar E-mail
+              </a>
+              </div>
             </li>
 
             <li>
@@ -43,48 +58,111 @@ function Aside() {
           <h2>SKILLS</h2>
           <h3>Full Stack Developer</h3>
 
-          <progress
-            id="html"
-            value="95"
-            max="100"
-            data-label="95% HTML5"
-          >
-          </progress>
+          <div>
+            <Progress
+              value={95}
+              max={100}
+              dataLabel="HTML5"
+            />
+          </div>
 
-          <progress
-            value="85"
-            max="100"
-            data-label="85% CSS"
-          >
-          </progress>
+          <div>
+            <Progress
+              value={85}
+              max={100}
+              dataLabel="CSS"
+            />
+          </div>
 
-          <progress
-            value="75"
-            max="100"
-            data-label="75% JavaScript"
-          >
-          </progress>
+          <div>
+            <Progress
+              value={75}
+              max={100}
+              dataLabel="JavaScript"
+            />
+          </div>
 
-          <progress
-            value="90"
-            max="100"
-            data-label="90% React"
-          >
-          </progress>
+          <div>
+            <Progress
+              value={90}
+              max={100}
+              dataLabel="React"
+            >
+            </Progress>
+          </div>
 
-          <progress
-            value="75"
-            max="100"
-            data-label="75% React-Native"
-          >
-          </progress>
+          <div>
+            <Progress
+              value={75}
+              max={100}
+              dataLabel="React-Native"
+            >
+            </Progress>
+          </div>
 
-          <progress
-            value="80"
-            max="100"
-            data-label="80% Node.js"
-          >
-          </progress>
+          <div>
+            <Progress
+              value={80}
+              max={100}
+              dataLabel="Node.js"
+            />
+          </div>
+
+        </div>
+
+        <div className="skills">
+          <h2>SKILLS</h2>
+          <h3>Full Stack Developer</h3>
+
+          <div>
+            <Progress
+              value={95}
+              max={100}
+              dataLabel="HTML5"
+            />
+          </div>
+
+          <div>
+            <Progress
+              value={85}
+              max={100}
+              dataLabel="CSS"
+            />
+          </div>
+
+          <div>
+            <Progress
+              value={75}
+              max={100}
+              dataLabel="JavaScript"
+            />
+          </div>
+
+          <div>
+            <Progress
+              value={90}
+              max={100}
+              dataLabel="React"
+            >
+            </Progress>
+          </div>
+
+          <div>
+            <Progress
+              value={75}
+              max={100}
+              dataLabel="React-Native"
+            >
+            </Progress>
+          </div>
+
+          <div>
+            <Progress
+              value={80}
+              max={100}
+              dataLabel="Node.js"
+            />
+          </div>
 
         </div>
 

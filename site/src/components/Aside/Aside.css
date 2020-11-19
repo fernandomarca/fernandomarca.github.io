@@ -5,25 +5,54 @@ div.container aside.aside {
 }
 
 div.container aside.aside .contact {
-  padding: 10px;
+  padding: 10px 10px 0 10px;
 }
 
 div.container aside.aside .contact h2 {
   font-size: 20px;
   text-align: center;
-  color: #7cc4ff;
+  color: #1D45F2;
   margin-bottom: 10px;
+  border-bottom: 2px solid rgba(116, 116, 116, 0.6);
 }
 
 div.container aside.aside .contact ul {
+  width: 210px;
   list-style: none;
   display: flex;
   flex-direction: column;
+  border-bottom: 2px solid rgba(116, 116, 116, 0.6);
+
 }
 
 div.container aside.aside .contact ul li {
   display: flex;
   align-items: center;
+  margin: 5px;
+}
+
+div.container aside.aside .contact ul li div.asidlinks {
+  display: flex;
+  align-items: center;
+}
+
+div.container aside.aside .contact ul li div.asidlinks:hover {
+  color: green
+}
+
+div.container aside.aside .contact ul li a {
+  text-decoration: none;
+  margin: 5px;
+}
+
+div.container aside.aside .contact ul li a:link,
+a:visited,
+a:active {
+  color: white;
+}
+
+div.container aside.aside .contact ul li a:hover {
+  text-decoration: underline green 2px solid;
 }
 
 div.container aside.aside .contact ul li span {
@@ -31,20 +60,44 @@ div.container aside.aside .contact ul li span {
 }
 
 div.container aside.aside .skills {
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 div.container aside.aside .skills h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
-  text-align: center;
-  margin-bottom: 10px;
-  color: #7cc4ff;
+  padding: 10px;
+  color: #1D45F2;
+  border-bottom: 2px solid rgba(116, 116, 116, 0.6);
+
 }
 
 div.container aside.aside .skills h3 {
   font-size: 16px;
   text-align: center;
-  margin-bottom: 5px;
+  padding: 10px 0px;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes progress-animation-before {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 div.container aside.aside .skills progress {
@@ -55,6 +108,7 @@ div.container aside.aside .skills progress {
   -webkit-appearance: none;
   border: none;
   position: relative;
+  animation: progress-animation 2s linear;
 }
 
 div.container aside.aside .skills progress::before {
@@ -64,9 +118,10 @@ div.container aside.aside .skills progress::before {
   font-weight: bold;
   vertical-align: 1;
 
+  animation: progress-animation-before 6s ease-in;
   position: absolute;
   left: 2px;
-  top: 2.5px;
+  top: 5px;
 }
 
 progress::-webkit-progress-bar {
@@ -74,9 +129,9 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: #7cc4ff;
+  background-color: #1d45f2;
 }
 
 progress::-moz-progress-bar {
-  background-color: #7cc4ff;
+  background-color: #1d45f2;
 }
